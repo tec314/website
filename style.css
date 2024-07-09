@@ -8,11 +8,12 @@ body {
 }
 
 header {
-    background-color: #0d4595;
+    background: url('assets/header\ background.jpg') no-repeat center center;
+    background-size: cover;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 nav {
@@ -24,15 +25,15 @@ nav {
 
 .tab-links {
     list-style-type: none;
-    padding: 0;
+    padding: 1;
     display: flex; /* Display tabs horizontally */
-    justify-content: center; /* Center align tabs */
+    justify-content: left; /* Center align tabs */
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0 2rem;
+    padding: 0 1rem;
     font-size: 17px;
 }
 
