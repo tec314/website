@@ -1,14 +1,82 @@
-<html>
-    <head>
-        <title>
-            
-        </title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery library -->
+    <script>
+        $(document).ready(function() {
+            // Hide all tab contents except the first one on page load
+            $(".tab-content:not(:first)").hide();
 
-    <body>
-        <header id="header">
-            <h1><b>Testing</b></h1>
-            <hr>little test<hr>
-        </header>
-    </body>
+            // Click event for tabs
+            $(".tab-link").click(function() {
+                var tabId = $(this).attr("data-tab");
+
+                // Hide all tab contents and show only the selected one
+                $(".tab-content").hide();
+                $("#" + tabId).fadeIn();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>Thomas Cridland</h1>
+</header>
+
+<nav>
+    <ul class="tab-links">
+        <li><a href="#" class="tab-link" data-tab="about">About</a></li>
+        <li><a href="#" class="tab-link" data-tab="projects">Projects</a></li>
+        <li><a href="#" class="tab-link" data-tab="contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio website. I am passionate about...</p>
+    </div>
+
+    <div id="projects" class="tab-content">
+        <h2>Projects</h2>
+
+        <div>
+            <h3>Model Railroad Dispatcher</h3>
+            <p>Description of Project 1...</p>
+            <figure>
+                <img src="assets\Model Railroad Circuit Planning.png" alt="Logo1">
+                <figcaption>Hardware Layout</figcaption>
+            </figure>
+            <figure> 
+                <img src="assets\Software.png" alt="Logo2">
+                <figcaption>Software Interface</figcaption>
+            </figure>
+            <figure> 
+                <progress value="63" max="100"></progress>
+                <figcaption>Progress: 63% Completion</figcaption>
+            </figure> 
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <p>Description of Project 2...</p>
+        </div>
+    </div>
+
+    <div id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>You can reach me at email@example.com</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
