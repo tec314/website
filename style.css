@@ -1,26 +1,50 @@
 /* Basic CSS for styling */
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('fonts/Fontspring-DEMO-proximanova-bold.otf') format('opentype');
+    /* Add additional src lines for other file formats if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemiBold';
+    src: url('fonts/Fontspring-DEMO-proximanova-semibold.otf') format('opentype');
+    /* Add additional src lines for other file formats if needed */
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
-    background: url('assets/header\ background.jpg') no-repeat center center;
-    background-size: cover;
+    font-family: 'ProximaNovaBold', sans-serif;
+    /*background: url('assets/header\ background.jpg') no-repeat center center;*/
+    background-size: 100%;
+    background-attachment: scroll;
+    width: 100%;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     font-size: 20px;
+    background-color: #3A506B;
 }
 
 nav {
-    background-color: #6ca8d6;
+    font-family: 'ProximaNovaBold', sans-serif;
+    background-color: #5BC0BE;
     text-align: center;
     padding: 0.5rem 0;
     font-size: 15px;
+}
+
+.header-text {
+    font-family: 'ProximaNovaBold', sans-serif;
 }
 
 .tab-links {
@@ -29,6 +53,17 @@ nav {
     list-style-type: none;
     display: flex; /* Display tabs horizontally */
     justify-content: left; /* Center align tabs */
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 10px
+}
+
+.grid-element {
+    font-family: 'ProximaNovaSemiBold', sans-serif;
+    height: auto;
+    max-width: 100%;
 }
 
 nav a {
@@ -43,9 +78,11 @@ nav a:hover {
 }
 
 .container {
-    width: 80%;
+    font-family: 'ProximaNovaSemiBold', sans-serif;
+    width: 90%;
     margin: auto;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer {
@@ -58,15 +95,44 @@ footer {
     width: 100%;
 }
 
-img {
-    width: 500px; /* Set the width */
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;0
 }
 
-.grid-container {
+.sub-grid-container {
     display: grid;
     column-gap: 50px;
     row-gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+button {
+    font-family: 'ProximaNovaSemiBold', sans-serif;
+    color: #ffffff;
+    background-color: #5bc0be;
+    font-size: 15px;
+    border: 1px solid #2d63c8;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #2d63c8;
+    background-color: #ffffff;
+}
+
+.text-overlay {
+    position: absolute; /* Position the overlay */
+    top: 50%; /* Adjust as needed */
+    left: 11%; /* Adjust as needed */
+    text-align: center; /* Center text horizontally */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 1px 10px; /* Padding around text */
+    border-radius: 10px; /* Optional: Rounded corners */
+    max-width: 100%;
+    font-size: 11px;
   }
