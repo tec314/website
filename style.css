@@ -55,11 +55,6 @@ nav {
     justify-content: left; /* Center align tabs */
 }
 
-.project-image {
-    max-width: 100%;
-    border-radius: 10px
-}
-
 .grid-element {
     font-family: 'ProximaNovaSemiBold', sans-serif;
     height: auto;
@@ -95,16 +90,16 @@ footer {
     width: 100%;
 }
 
-.grid-container {
+.main-project-grid-container {
+    column-gap: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;0
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-.sub-grid-container {
-    display: grid;
-    column-gap: 50px;
-    row-gap: 50px;
+.project-description-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -124,15 +119,27 @@ button:hover {
     background-color: #ffffff;
 }
 
+.image-container {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+  }
+
+.project-image {
+    position: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px
+}
+
 .text-overlay {
-    position: absolute; /* Position the overlay */
-    top: 50%; /* Adjust as needed */
-    left: 11%; /* Adjust as needed */
-    text-align: center; /* Center text horizontally */
-    color: white; /* Text color */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 1px 10px; /* Padding around text */
-    border-radius: 10px; /* Optional: Rounded corners */
-    max-width: 100%;
-    font-size: 11px;
+    font-family: 'ProximaNovaSemiBold', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: left; /* Align text to the left */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1px 10px; /* Adjust padding as needed */
+    border-radius: 15px; /* Optional: Rounded corners */
   }
