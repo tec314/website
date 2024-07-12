@@ -1,7 +1,7 @@
 /* Basic CSS for styling */
 @font-face {
-    font-family: 'ProximaNovaBold';
-    src: url('fonts/Fontspring-DEMO-proximanova-bold.otf') format('opentype');
+    font-family: 'ProximaNovaThin';
+    src: url('fonts/Fontspring-DEMO-proximanova-thin.otf') format('opentype');
     /* Add additional src lines for other file formats if needed */
     font-weight: normal;
     font-style: normal;
@@ -15,6 +15,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('fonts/Fontspring-DEMO-proximanova-regular.otf') format('opentype');
+    /* Add additional src lines for other file formats if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     line-height: 1.6;
     margin: 0;
@@ -23,7 +31,7 @@ body {
 }
 
 header {
-    font-family: 'ProximaNovaBold', sans-serif;
+    font-family: 'ProximaNovaThin', sans-serif;
     /*background: url('assets/header\ background.jpg') no-repeat center center;*/
     background-size: 100%;
     background-attachment: scroll;
@@ -31,12 +39,12 @@ header {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #3A506B;
 }
 
 nav {
-    font-family: 'ProximaNovaBold', sans-serif;
+    font-family: 'ProximaNovaRegular', sans-serif;
     background-color: #5BC0BE;
     text-align: center;
     padding: 0.5rem 0;
@@ -44,7 +52,7 @@ nav {
 }
 
 .header-text {
-    font-family: 'ProximaNovaBold', sans-serif;
+    font-family: 'ProximaNovaThin', sans-serif;
 }
 
 .tab-links {
@@ -56,7 +64,7 @@ nav {
 }
 
 .grid-element {
-    font-family: 'ProximaNovaSemiBold', sans-serif;
+    font-family: 'ProximaNovaRegular', sans-serif;
     height: auto;
     max-width: 100%;
 }
@@ -73,7 +81,7 @@ nav a:hover {
 }
 
 .container {
-    font-family: 'ProximaNovaSemiBold', sans-serif;
+    font-family: 'ProximaNovaSemiRegular', sans-serif;
     width: 90%;
     margin: auto;
     padding-top: 20px;
@@ -91,7 +99,7 @@ footer {
 }
 
 .main-project-grid-container {
-    column-gap: 60px;
+    column-gap: 90px;
     padding-top: 15px;
     padding-bottom: 15px;
     display: grid;
@@ -131,15 +139,47 @@ button:hover {
     border-radius: 10px
 }
 
+.resource-icon {
+    position: inline-block;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.resource-icon img {
+    background-color: #a8dcff;
+    padding: 5px;
+    display: block;
+    width: 45px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.resource-icon-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
+    grid-template-rows: 1fr;
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project-image:hover {
+    opacity: 0.6; /* Reduce opacity on hover to create the fade effect */
+    cursor: pointer; /* Change cursor to pointer (finger) */
+  }
+
 .text-overlay {
     font-family: 'ProximaNovaSemiBold', sans-serif;
     font-size: 12px;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
     text-align: left; /* Align text to the left */
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1px 10px; /* Adjust padding as needed */
     border-radius: 15px; /* Optional: Rounded corners */
   }
+
+  
