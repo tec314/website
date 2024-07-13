@@ -86,6 +86,7 @@ nav a:hover {
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
 }
 
 footer {
@@ -167,7 +168,7 @@ button:hover {
 .project-image:hover {
     opacity: 0.6; /* Reduce opacity on hover to create the fade effect */
     cursor: pointer; /* Change cursor to pointer (finger) */
-  }
+}
 
 .text-overlay {
     font-family: 'ProximaNovaSemiBold', sans-serif;
@@ -180,6 +181,10 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1px 10px; /* Adjust padding as needed */
     border-radius: 15px; /* Optional: Rounded corners */
-  }
+}
 
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
   
