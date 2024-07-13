@@ -22,22 +22,6 @@
             });
         </script>
 
-        <script>
-            $(document).ready(function() {
-                // Hide all tab contents except the first one on page load
-                $(".tab-content:not(:first)").hide();
-
-                // Click event for tabs
-                $(".project-image").click(function() {
-                    var tabId = $(this).attr("data-tab");
-
-                    // Hide all tab contents and show only the selected one
-                    $(".tab-content").hide();
-                    $("#" + tabId).fadeIn();
-                });
-            });
-        </script>
-
 <script>
     $(document).ready(function() {
         // Hide all tab contents except the first one on page load
