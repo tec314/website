@@ -37,7 +37,9 @@ body {
 
 header {
     font-family: 'ProximaNovaThin', sans-serif;
-    background: url('assets/header\ background2.png');
+    /*background: url('assets/header\ background2.png');*/
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(179, 70, 252) 100%);
     background-size: cover; /* This stretches the background image to cover the entire area */
     background-repeat: no-repeat; /* Ensures the image is not repeated */
     background-position: center; /* Centers the image within the element */
