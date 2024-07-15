@@ -47,6 +47,7 @@ header {
     text-align: center;
     padding: 1rem 0;
     font-size: 25px;
+    align-items: center;
     /*background-color: #3A506B;*/
 }
 
@@ -56,6 +57,7 @@ nav {
     text-align: center;
     padding: 0.5rem 0;
     font-size: 15px;
+    align-items: center;
 }
 
 .header-text {
