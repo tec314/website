@@ -51,15 +51,6 @@ header {
     /*background-color: #3A506B;*/
 }
 
-nav {
-    font-family: 'ProximaNovaRegular', sans-serif;
-    background-color: #333;
-    text-align: center;
-    padding: 0.5rem 0;
-    font-size: 15px;
-    align-items: center;
-}
-
 .header-text {
     font-family: 'ProximaNovaThin', sans-serif;
 }
@@ -82,6 +73,15 @@ nav {
     max-width: 100%;
 }
 
+nav {
+    font-family: 'ProximaNovaRegular', sans-serif;
+    background-color: #333;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 15px;
+    align-items: center;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -91,6 +91,11 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+nav img {
+    max-height: 150%; /* Ensure the image doesn't exceed navbar height */
+    max-width: auto; /* Ensure the image doesn't exceed navbar width */
 }
 
 .container {
