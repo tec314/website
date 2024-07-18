@@ -140,7 +140,7 @@ button:hover {
 .image-container {
     position: relative;
     width: 100%; /* Adjust as needed */
-  }
+}
 
 .project-image {
     position: block;
@@ -192,3 +192,9 @@ button:hover {
     border-radius: 15px; /* Optional: Rounded corners */
 }
   
+/* Mobile Mode */
+@media (max-width: 768px) {
+    .main-project-grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
