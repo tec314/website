@@ -97,7 +97,8 @@ nav a:hover {
 nav img {
     width: 25px;
     height: 25px;
-    display: inline;
+    margin-top: -4px;
+    margin-left: -20px;
 }
 
 .container {
