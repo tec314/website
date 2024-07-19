@@ -60,18 +60,18 @@ header {
     font-family: 'ProximaNovaRegular', sans-serif;
 }
 
+.grid-element {
+    font-family: 'Calibri';
+    height: auto;
+    max-width: 100%;
+}
+
 .tab-links {
     line-height: 15px;
     height : 15px;
     list-style-type: none;
     display: flex; /* Display tabs horizontally */
     justify-content: flex-start; /* Center align tabs */
-}
-
-.grid-element {
-    font-family: 'Calibri';
-    height: auto;
-    max-width: 100%;
 }
 
 nav {
@@ -81,7 +81,6 @@ nav {
     padding: 0.5rem 0;
     font-size: 15px;
     align-items: left;
-    width: 100%;
 }
 
 nav a {
