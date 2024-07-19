@@ -81,6 +81,7 @@ nav {
     padding: 0.5rem 0;
     font-size: 15px;
     align-items: left;
+    width: 100%;
 }
 
 nav a {
