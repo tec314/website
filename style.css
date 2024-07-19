@@ -202,23 +202,15 @@ button:hover {
     padding: 1px 10px; /* Adjust padding as needed */
     border-radius: 15px; /* Optional: Rounded corners */
 }
-  
+
 /* Mobile Mode */
 @media (max-width: 768px) {
     .main-project-grid-container {
         grid-template-columns: 1fr; /* Single column layout */
     }
 
-    .container {
-        max-width: 750px;
-    }
-
-    nav {
-        max-width: 750px;
-    }
-
-    header {
-        max-width: 750px;
+    .site-container {
+        max-width: 100%;
     }
 
 
