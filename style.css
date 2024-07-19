@@ -97,7 +97,6 @@ nav a:hover {
 nav img {
     max-height: 150%; /* Ensure the image doesn't exceed navbar height */
     max-width: auto; /* Ensure the image doesn't exceed navbar width */
-    height: auto;
     display: block;
 }
 
