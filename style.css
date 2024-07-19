@@ -97,6 +97,8 @@ nav a:hover {
 nav img {
     max-height: 150%; /* Ensure the image doesn't exceed navbar height */
     max-width: auto; /* Ensure the image doesn't exceed navbar width */
+    height: auto;
+    display: block;
 }
 
 .container {
@@ -207,10 +209,6 @@ button:hover {
 @media (max-width: 768px) {
     .main-project-grid-container {
         grid-template-columns: 1fr; /* Single column layout */
-    }
-
-    .site-container {
-        max-width: 750px;
     }
 
 }
