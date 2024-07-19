@@ -210,8 +210,7 @@ button:hover {
     }
 
     .site-container {
-        max-width: 100%;
+        max-width: 750px;
     }
-
 
 }
