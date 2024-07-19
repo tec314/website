@@ -65,7 +65,7 @@ header {
     height : 15px;
     list-style-type: none;
     display: flex; /* Display tabs horizontally */
-    justify-content: left; /* Center align tabs */
+    justify-content: flex-start; /* Center align tabs */
 }
 
 .grid-element {
