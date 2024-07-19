@@ -209,4 +209,18 @@ button:hover {
     .main-project-grid-container {
         grid-template-columns: 1fr; /* Single column layout */
     }
+
+    .container {
+        max-width: 750px;
+    }
+
+    nav {
+        max-width: 750px;
+    }
+
+    header {
+        max-width: 750px;
+    }
+
+
 }
