@@ -29,6 +29,8 @@
 }
 
 body {
+    background: rgb(37, 37, 37);
+    color: rgb(255,255,255);
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -54,6 +56,10 @@ header {
 
 .header-text {
     font-family: 'ProximaNovaThin', sans-serif;
+}
+
+figure {
+    margin-left: 0px;
 }
 
 .progress-text {
@@ -137,17 +143,17 @@ footer {
 
 button {
     font-family: 'ProximaNovaSemiBold', sans-serif;
-    color: #ffffff;
-    background-color: #4cc9f0;
+    color: rgb(0,0,0);
+    background-color: rgb(167, 109, 255);
     font-size: 15px;
-    border: 1px solid #2d63c8;
+    border-radius: 10px;
     padding: 15px 10px;
     cursor: pointer;
 }
 
 button:hover {
-    color: #2d63c8;
-    background-color: #ffffff;
+    color: #00000176;
+    background-color: #c29fff;
 }
 
 .image-container {
