@@ -134,11 +134,14 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr;
+    
 }
 
 .project-description-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-left: 25px;
+    border-left: 1px solid white; /* Border only between columns */
 }
 
 .project-page-grid-container {
@@ -146,12 +149,12 @@ footer {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 80px;
-    align-items: center;
 }
 
 .project-page-grid-container img {
     width: 100%;
     height: auto;
+    align-items: center;
 }
 
 button {
@@ -215,6 +218,7 @@ button:hover {
     font-family: 'ProximaNovaSemiBold', sans-serif;
     font-size: 12px;
     position: absolute;
+    height: 40px;
     top: 10px;
     left: 10px;
     text-align: left; /* Align text to the left */
@@ -222,6 +226,13 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1px 10px; /* Adjust padding as needed */
     border-radius: 15px; /* Optional: Rounded corners */
+    line-height: 0.6; /* Ensure the line height is normal */
+}
+
+.project-page-center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Mobile Mode Redefinitions */
