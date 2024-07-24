@@ -146,11 +146,12 @@ footer {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 80px;
+    align-items: center;
 }
 
 .project-page-grid-container img {
-    width: 400px;
-    height: 450px;
+    width: 100%;
+    height: auto;
 }
 
 button {
@@ -223,10 +224,14 @@ button:hover {
     border-radius: 15px; /* Optional: Rounded corners */
 }
 
-/* Mobile Mode */
+/* Mobile Mode Redefinitions */
 @media (max-width: 768px) {
     .main-project-grid-container {
         grid-template-columns: 1fr; /* Single column layout */
     }
 
+    .project-page-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
