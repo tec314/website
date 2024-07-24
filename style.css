@@ -87,6 +87,7 @@ nav {
     padding: 0.5rem 0;
     font-size: 15px;
     align-items: left;
+    margin-left: -20px;
 }
 
 nav a {
@@ -104,7 +105,6 @@ nav img {
     width: 25px;
     height: 25px;
     margin-top: -4px;
-    margin-left: -20px;
 }
 
 .container {
@@ -139,6 +139,18 @@ footer {
 .project-description-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.project-page-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 80px;
+}
+
+.project-page-grid-container img {
+    width: 400px;
+    height: 450px;
 }
 
 button {
