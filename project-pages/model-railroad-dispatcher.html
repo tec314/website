@@ -20,10 +20,40 @@
             <div id="project1" class="tab-content">
                 <h2><a class="header-text">Model Railroad Dispatcher</a></h2>
                 <hr>
-                <p>Lorem ipsum dolor sit amet. Est voluptatem dolor aut nemo dolores id quas reprehenderit sit impedit esse aut debitis impedit sed cupiditate dolorem ut explicabo iusto. Et ratione dicta ea laudantium mollitia cum reiciendis molestiae et voluptas excepturi id eligendi totam non nisi perspiciatis vel voluptate eveniet! Sed eaque nostrum ab quae saepe est nemo dolorem. Qui dignissimos exercitationem et odio earum eum Quis nemo id consequatur consectetur est commodi laborum et deserunt rerum eos modi nostrum. Ex repudiandae unde et doloribus adipisci sit repellat praesentium est officiis vero et necessitatibus enim qui odit deserunt At velit galisum.</p>
+                <p>
+                    Welcome to my personal challenge: creating my own centralized dispaching system used for my model trains. When it came to seeing and managing what occurs on a train layout, I wanted all of my controls in one spot for ease of use. To do so, I had to create my own program, taking into account what I needed and what was feasable as a single developer.
+                </p>
                 <hr>
-                <h2><a class="header-text">Goal</a></h2>
-                <h2><a class="header-text">Challenges</a></h2>
+                <h2><a class="header-text">Plan</a></h2>
+                <p>
+                    In order for software to communicate with hardware in an efficient manner, I planned to create a hierarchical master/slave setup. The following diagram highlights this hierarchy. The computer on which this program is running on sits on the top of this hierarchy as the main brains of the system, taking all information and making decisions based on it. Refer to my Arduino Model Railroad project to learn more about this hierarchical system, as it dives into specifics on hardware aspects of the system that make up the rest of the hierarchy. 
+                </p>
+                <div class="goal-challenges-grid-container">
+                    <div class="grid-element">
+                        <h2><a class="header-text">Goal</a></h2>
+                        <p>
+                            Upon starting this project, I was well aware that options already existed for this problem. There are multiple programs available that handle realistic model railroading control, mimicking a lot of the same features my own program aims to replicate. However, I wanted to create a challenge for myself of creating my own unique solution, completely from the ground up. By doing so, I am able to design my own system that is under my control, learning along the way what it takes to create what is essentially a software-defined network. If an issue were to come up, I am able to directly pinpoint the root cause rather than searching through bug forums for answers.
+                        </p>
+                        <p>
+                            For instance, I intended on making the hardware Arduino-based, which is unique on its own. Some commercial software requires their own hardware peripherals, which can easily accumulate and create compatibility issues. My system is cheaper, requiring basic microcrontrollers that can handle multiple functions.
+                        </p> 
+                        <p>
+                            In all, I went into this project with two things in mind: make it my own, and learn new things along the way.
+                        </p>
+                    </div>
+                    <div class="grid-element">
+                        <h2><a class="header-text">Challenges</a></h2>
+                        <p>
+                            A number of issues requiring extensive debugging came up throughout the duration of this project. They mainly fell under two categories: compatibility with the hardware, and pathfinding logic. Here were a number of long lasting bugs present:
+                        </p>
+                        <ul>
+                            <li>Signals not updating correctly upon multiple trains pathfinding along the same route</li>
+                            <li>COM port connectivity (crashing when Arduino connection is lost)</li>
+                            <li>COM port serial issues between Arduino and computer (messages sent and recieved were not alway the same)</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
                 <h3><a class="header-text">Resources Used</a></h3>
                 <div class="resource-icon-container">
                     <div class="grid-element">

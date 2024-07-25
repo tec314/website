@@ -132,7 +132,7 @@ footer {
     padding-top: 15px;
     padding-bottom: 15px;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.3fr 1.5fr;
     grid-template-rows: 1fr;
     
 }
@@ -155,6 +155,13 @@ footer {
     width: 100%;
     height: auto;
     align-items: center;
+}
+
+.goal-challenges-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 80px;
 }
 
 button {
@@ -202,8 +209,8 @@ button:hover {
 }
 
 .resource-icon-container {
-    column-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
     grid-template-rows: 1fr;
     display: grid;
     padding-bottom: 10px;
@@ -242,6 +249,11 @@ button:hover {
     }
 
     .project-page-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .goal-challenges-grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
