@@ -237,9 +237,10 @@ button:hover {
 }
 
 .project-page-center-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
 }
 
 /* Mobile Mode Redefinitions */
@@ -256,5 +257,11 @@ button:hover {
     .goal-challenges-grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    .project-page-center-image {
+        display: block;
+        width: 120%;
+        height: auto;
     }
 }

@@ -26,31 +26,38 @@
                 <hr>
                 <h2><a class="header-text">Plan</a></h2>
                 <p>
-                    In order for software to communicate with hardware in an efficient manner, I planned to create a hierarchical master/slave setup. The following diagram highlights this hierarchy. The computer on which this program is running on sits on the top of this hierarchy as the main brains of the system, taking all information and making decisions based on it. Refer to my Arduino Model Railroad project to learn more about this hierarchical system, as it dives into specifics on hardware aspects of the system that make up the rest of the hierarchy. 
+                    In order for software to communicate with hardware in an efficient manner, I planned to create a hierarchical master/slave setup. The following diagram highlights this hierarchy. The computer on which this program is running on sits on the top of this hierarchy as the main brains of the system, taking all information and making decisions based on it. 
+                </p>
+                <div class="project-page-center-image">
+                    <img src="../assets/project-page-media/model-railroad-hardware/hierarchy-chart.png" style="width: 80%; height: auto;" alt="TempThumbnail">
+                </div>
+                <p>
+                    Falling directly underneath the software is the Master Arduino, acting as the main "valve" of the network. All messages traveling to and from the layout pass throug this device. I use a LCD screen to display all communication traveling through the board for debugging purposes. Additionally, if an error in a serial message packet were to occur, this Master Arduino will catch the incorrect message and shut the "valve" off, preventing that message from being misinterpreted down the line.
+                </p>
+                <p>
+                    Finally, the Slave Arduinos sit at the bottom of the hierarchy. These Arduinos are daisy chained together, allowing a message sent from the computer to be passed to each Slave Arduino in hopes of reaching its proper recipient. A region on the model railroad is assigned to a single Slave Arduino, which controls its signals, switches, and other peripherals. Each Slave Arduino has a name, acting as the "MAC address" for a packet of information to be sent to.
                 </p>
                 <div class="goal-challenges-grid-container">
                     <div class="grid-element">
                         <h2><a class="header-text">Goal</a></h2>
                         <p>
-                            Upon starting this project, I was well aware that options already existed for this problem. There are multiple programs available that handle realistic model railroading control, mimicking a lot of the same features my own program aims to replicate. However, I wanted to create a challenge for myself of creating my own unique solution, completely from the ground up. By doing so, I am able to design my own system that is under my control, learning along the way what it takes to create what is essentially a software-defined network. If an issue were to come up, I am able to directly pinpoint the root cause rather than searching through bug forums for answers.
-                        </p>
-                        <p>
-                            For instance, I intended on making the hardware Arduino-based, which is unique on its own. Some commercial software requires their own hardware peripherals, which can easily accumulate and create compatibility issues. My system is cheaper, requiring basic microcrontrollers that can handle multiple functions.
-                        </p> 
-                        <p>
-                            In all, I went into this project with two things in mind: make it my own, and learn new things along the way.
+                            d
                         </p>
                     </div>
                     <div class="grid-element">
                         <h2><a class="header-text">Challenges</a></h2>
                         <p>
-                            A number of issues requiring extensive debugging came up throughout the duration of this project. They mainly fell under two categories: compatibility with the hardware, and pathfinding logic. Here were a number of long lasting bugs present:
+                            challenge
                         </p>
                         <ul>
-                            <li>Signals not updating correctly upon multiple trains pathfinding along the same route</li>
-                            <li>COM port stability (crashing when Arduino connection is lost)</li>
-                            <li>COM port serial issues between Arduino and computer (messages sent and recieved were not alway the same)</li>
+                            <li>Servo jitter due to a noisy ground</li>
                         </ul>
+                        <p>
+                            My biggest point of failure occured with the servos. These SG90 servos are able to draw high currents under load, such as when a servo may be trying to turn further than a switch will allow it to. The mistake I made was powering them off of the 5V supply from their assigned Arduino Nano. At one point the current draw of these servos exceeded the regulated value for the Arduino, causing the onboard voltage regulator to burn up and render the board useless. 
+                        </p>
+                        <p>
+                            After this occured, I made it top priority to regulate appropriate current draws from the Arduino and connect the servos to a seperate 12V 5A power bus. 
+                        </p>
                     </div>
                 </div>
                 <hr>
