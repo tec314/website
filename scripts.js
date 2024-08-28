@@ -1,5 +1,5 @@
 // script.js
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll('.grid-element');
 
@@ -29,3 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial check in case items are already in view
     handleScroll();
 });
+*/

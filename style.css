@@ -23,15 +23,17 @@
     font-style: normal;
 }
 
+/*
 @keyframes fadeInAnimation {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-/* Class for triggering animation when visible */
+// Class for triggering animation when visible
 .fade-in {
     animation: fadeInAnimation 0.6s ease-out forwards;
 }
+*/
 
 body {
     background: rgb(255, 255, 255);
@@ -191,8 +193,10 @@ button:hover {
 }
 
 .image-container {
+    opacity: 0; /* Start invisible prior to fadeIn animation */
     position: relative;
     width: 100%; /* Adjust as needed */
+    animation: fadeIn 1s forwards;
 }
 
 .project-image {
@@ -279,6 +283,52 @@ button:hover {
     background-color: purple;
 }
 
+.contacts-element {
+    opacity: 0; /* Start invisible prior to fadeIn animation */
+    background-color: rgb(155, 188, 254);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    animation: fadeIn 1s forwards;
+}
+
+.contacts-element:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.contacts-element:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.contacts-element:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.contacts-element:hover {
+    color: #00000176;
+    background-color: rgb(182, 205, 250);
+}
+
+.contacts-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
 /* Mobile Mode Redefinitions */
 @media (max-width: 768px) {
     .main-project-grid-container {
@@ -300,5 +350,10 @@ button:hover {
         width: 100%;
         height: auto;
         margin: 0 auto;
+    }
+
+    .contacts-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 }
