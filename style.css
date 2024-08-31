@@ -42,7 +42,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    padding-bottom: 80px; /* Added padding for footer (to prevent footer from blocking body text) */
     animation: fadeIn 0.5s forwards;
 }
 
@@ -143,7 +142,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
 }
