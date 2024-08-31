@@ -370,9 +370,16 @@ button:hover {
 @media (max-width: 768px) {
     .main-project-grid-container {
         grid-template-columns: 1fr; /* Single column layout */
+        opacity: 0; /* Start invisible prior to fadeInUp animation */
+        column-gap: 90px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: grid;
+        animation: fadeInUp 1s forwards;
     }
 
     .project-page-grid-container {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
