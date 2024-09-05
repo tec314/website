@@ -210,6 +210,13 @@ button:hover {
     width: 100%; /* Adjust as needed */
 }
 
+.home-page-image {
+    position: block;
+    width: 100vw;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
 .project-image {
     border: 3px solid black;
     position: block;
@@ -363,6 +370,7 @@ button:hover {
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 /* Mobile Mode Redefinitions */
